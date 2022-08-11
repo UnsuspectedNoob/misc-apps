@@ -82,7 +82,7 @@ class Matrix {
       return new Matrix(
         this.height,
         this.width,
-        (x, y) => matrix * this.get(x, y)
+        (x, y) => Math.floor(matrix) * this.get(x, y)
       );
     }
 
