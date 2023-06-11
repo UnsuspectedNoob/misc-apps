@@ -26,7 +26,7 @@ function toRoman( number=1 ) {
     // If number is a key in the toSymbol object.
     if (toSymbol[digit]) {
       romanNumeral += `${toSymbol[digit]}`;
-    } else if (digit === 0) {} else {
+    } else if (digit === 0) {} else { // If digit is 0
       let previous;
 
       for (let symbol in toSymbol) {
